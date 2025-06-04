@@ -50,273 +50,297 @@
             </tr>
           </tbody>
         </table>
-    
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">          
+
+        <div style="width:100%;max-width:800px;margin:24px auto 0 auto;text-align:center;">
+          <button id="show-selected" style="padding:6px 18px;margin:4px 8px;font-size:16px;border-radius:6px;border:1px solid #ccc;cursor:pointer;background:#fff9db;">Selected</button>
+          <button id="show-all" style="padding:6px 18px;margin:4px 8px;font-size:16px;border-radius:6px;border:1px solid #ccc;cursor:pointer;">Full List</button>
+        </div>
+
+        <table id="research-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">          
           <tbody>
             <tr>
               <td style="padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
                 <heading>Research</heading>
               </td>
             </tr>
-            
-            <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-              <td style="background-color:#fff9db;padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
-                <div style="display:flex;align-items:flex-start;">
-                  <img src="./assets/DRK.gif" alt="Deformable Radial Kernel Splatting GIF" style="width:240px;max-width:80%;margin-right:16px;border-radius:8px;">
-                  <div>
-                    [11]&nbsp&nbsp<papertitle>Deformable Radial Kernel Splatting</papertitle>
-                    <br>
-                    <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong> </a>,
-                    <a href="https://scholar.google.com/citations?hl=en&user=smnEog0AAAAJ">MingXian Lin</a>,
-                    <a href="https://sunyangtian.github.io/">Yang-Tian Sun</a>,
-                    <a href="https://github.com/ingra14m">Ziyi Yang</a>,
-                    <a href="https://github.com/shawLyu">Xiaoyang Lyu</a><sup></sup>,
-                    <a href="https://yanpei.me/">Yan-Pei Cao</a><sup>#</sup>,
-                    <a href="https://xjqi.github.io/">Xiaojuan Qi</a><sup>#</sup>
-                    <br>
-                    <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2025 &nbsp
-                    <br>
-                    <a href="https://arxiv.org/pdf/2412.11752">paper</a> /
-                    <a href="https://yihua7.github.io/DRK-web/">project page</a> /
-                    <a href="https://github.com/yihua7/Deformable-Radial-Kernel-Splatting">code</a> 
-                    <br>
-                    We introduce Deformable Radial Kernel (DRK), which extends Gaussian splatting into a more general and flexible framework. Through learnable radial bases with adjustable angles and scales, DRK efficiently models diverse shape primitives while enabling precise control over edge sharpness and boundary curvature
+
+              <tr>
+                <td style="background-color:#fff9db;padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
+                  <div style="display:flex;align-items:flex-start;">
+                    <img src="./assets/DRK.gif" alt="Deformable Radial Kernel Splatting GIF" style="width:240px;max-width:80%;margin-right:16px;border-radius:8px;">
+                    <div>
+                      [11]&nbsp&nbsp<papertitle>Deformable Radial Kernel Splatting</papertitle>
+                      <br>
+                      <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong> </a>,
+                      <a href="https://scholar.google.com/citations?hl=en&user=smnEog0AAAAJ">MingXian Lin</a>,
+                      <a href="https://sunyangtian.github.io/">Yang-Tian Sun</a>,
+                      <a href="https://github.com/ingra14m">Ziyi Yang</a>,
+                      <a href="https://github.com/shawLyu">Xiaoyang Lyu</a><sup></sup>,
+                      <a href="https://yanpei.me/">Yan-Pei Cao</a><sup>#</sup>,
+                      <a href="https://xjqi.github.io/">Xiaojuan Qi</a><sup>#</sup>
+                      <br>
+                      <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2025 &nbsp
+                      <br>
+                      <a href="https://arxiv.org/pdf/2412.11752">paper</a> /
+                      <a href="https://yihua7.github.io/DRK-web/">project page</a> /
+                      <a href="https://github.com/yihua7/Deformable-Radial-Kernel-Splatting">code</a> 
+                      <iframe src="https://ghbtns.com/github-btn.html?user=VAST-AI-Research&repo=Deformable-Radial-Kernel-Splatting&type=star&count=true&size=small" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+                      <br>
+                      We introduce Deformable Radial Kernel (DRK), which extends Gaussian splatting into a more general and flexible framework. Through learnable radial bases with adjustable angles and scales, DRK efficiently models diverse shape primitives while enabling precise control over edge sharpness and boundary curvature
+                    </div>
                   </div>
-                </div>
-              </td>
-            </tr>
-            
-            <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-              <td style="background-color:#fff9db;padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
-                <div style="display:flex;align-items:flex-start;">
-                  <img src="./assets/SC-GS.gif" alt="Deformable Radial Kernel Splatting GIF" style="width:240px;max-width:80%;margin-right:16px;border-radius:8px;">
-                  <div>
-                    [10]&nbsp&nbsp<papertitle>SC-GS: Sparse-Controlled Gaussian Splatting for Editable Dynamic Scenes</papertitle>
+                </td>
+              </tr>
+              
+              <tr>
+                <td style="background-color:#fff9db;padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
+                  <div style="display:flex;align-items:flex-start;">
+                    <img src="./assets/SC-GS.gif" alt="Deformable Radial Kernel Splatting GIF" style="width:240px;max-width:80%;margin-right:16px;border-radius:8px;">
+                    <div>
+                      [10]&nbsp&nbsp<papertitle>SC-GS: Sparse-Controlled Gaussian Splatting for Editable Dynamic Scenes</papertitle>
+                      <br>
+                      <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong> </a><sup>*</sup>,
+                      <a href="https://sunyangtian.github.io/">Yang-Tian Sun</a><sup>*</sup>,
+                      <a href="https://github.com/ingra14m">Ziyi Yang</a><sup>*</sup>,
+                      <a href="https://github.com/shawLyu">Xiaoyang Lyu</a><sup></sup>,
+                      <a href="https://yanpei.me/">Yan-Pei Cao</a><sup>#</sup>,
+                      <a href="https://xjqi.github.io/">Xiaojuan Qi</a><sup>#</sup>
+                      <br>
+                      <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024 &nbsp
+                      <br>
+                      <a href="https://arxiv.org/abs/2312.14937">paper</a> /
+                      <a href="https://yihua7.github.io/SC-GS-web/">project page</a> /
+                      <a href="https://github.com/yihua7/SC-GS">code</a> 
+                      <iframe src="https://ghbtns.com/github-btn.html?user=CVMI-Lab&repo=SC-GS&type=star&count=true&size=small" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+                      <br>
+                      We introduce sparse-controlled gaussian splatting to synthesize dynamic novel views. With the learned node graph of sparse control points, real-time editing can be achieved with ARAP deformation by interactive dragging of users.
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td style="padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
+                    [9]&nbsp&nbsp<papertitle>Splatter a Video: Video Gaussian Representation for Versatile Processing</papertitle>
                     <br>
-                    <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong> </a><sup>*</sup>,
                     <a href="https://sunyangtian.github.io/">Yang-Tian Sun</a><sup>*</sup>,
-                    <a href="https://github.com/ingra14m">Ziyi Yang</a><sup>*</sup>,
+                    <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong> </a><sup>*</sup>,
+                    <a>Lin Ma</a><sup></sup>,
                     <a href="https://github.com/shawLyu">Xiaoyang Lyu</a><sup></sup>,
-                    <a href="https://yanpei.me/">Yan-Pei Cao</a><sup>#</sup>,
+                    <a href="https://yanpei.me/">Yan-Pei Cao</a>,
                     <a href="https://xjqi.github.io/">Xiaojuan Qi</a><sup>#</sup>
                     <br>
-                    <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024 &nbsp
+                    <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024 &nbsp
                     <br>
-                    <a href="https://arxiv.org/abs/2312.14937">paper</a> /
-                    <a href="https://yihua7.github.io/SC-GS-web/">project page</a> /
-                    <a href="https://github.com/yihua7/SC-GS">code</a> 
+                    <a href="https://arxiv.org/abs/2406.13870">paper</a> /
+                    <a href="https://sunyangtian.github.io/spatter_a_video_web/">project page</a> /
+                    <a href="https://github.com/SunYangtian/Splatter_A_Video">code</a> 
+                    <iframe src="https://ghbtns.com/github-btn.html?user=SunYangtian&repo=Splatter_A_Video&type=star&count=true&size=small" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
                     <br>
-                    We introduce sparse-controlled gaussian splatting to synthesize dynamic novel views. With the learned node graph of sparse control points, real-time editing can be achieved with ARAP deformation by interactive dragging of users.
-                  </div>
-                </div>
-              </td>
-            </tr>
+                    We introduce a novel explicit 3D representation—video Gaussian representation—that embeds a video into 3D Gaussians, enabling tracking, consistent video depth and feature refinement, motion and appearance editing, and stereoscopic video generation.
+                </td>
+              </tr>
+              
+              <tr>
+                <td style="padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
+                    [8]&nbsp&nbsp<papertitle>Spec-gaussian: Anisotropic view-dependent appearance for 3d gaussian splatting</papertitle>
+                    <br>
+                    <a href="https://github.com/ingra14m">Ziyi Yang</a>,
+                    <a>Xinyu Gao</a>,
+                    <a href="https://sunyangtian.github.io/">Yang-Tian Sun</a>,
+                    <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong> </a>,
+                    <a href="https://github.com/shawLyu">Xiaoyang Lyu</a><sup></sup>,
+                    <a>Wen Zhou</a>,
+                    <a>Shaohui Jiao</a>,
+                    <a href="https://xjqi.github.io/">Xiaojuan Qi</a><sup>#</sup>
+                    <a>Xiaogang Jin</a><sup>#</sup>
+                    <br>
+                    <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024 &nbsp
+                    <br>
+                    <a href="https://ingra14m.github.io/Spec-Gaussian-website/file/Spec-Gaussian-nips24.pdf">paper</a> /
+                    <a href="https://ingra14m.github.io/Spec-Gaussian-website/">project page</a> /
+                    <a href="https://github.com/ingra14m/Spec-Gaussian">code</a> 
+                    <iframe src="https://ghbtns.com/github-btn.html?user=ingra14m&repo=Specular-Gaussians&type=star&count=true&size=small" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+                    <br>
+                    We introduce Spec-Gaussian, an approach that utilizes an anisotropic spherical Gaussian (ASG) appearance field instead of SH for modeling the view-dependent appearance of each 3D Gaussian.
+                </td>
+              </tr>
+              
+              <tr>
+                <td style="padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
+                    [7]&nbsp&nbsp<papertitle>3DGSR: Implicit Surface Reconstruction with 3D Gaussian Splatting</papertitle>
+                    <br>
+                    <a href="https://github.com/shawLyu">Xiaoyang Lyu</a><sup></sup>,
+                    <a href="https://sunyangtian.github.io/">Yang-Tian Sun</a>,
+                    <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong> </a>,
+                    <a>Xiuzhe Wu</a>,
+                    <a href="https://github.com/ingra14m">Ziyi Yang</a>,
+                    <a>Yilun Chen</a>,
+                    <a>Jiangmiao Pang</a>,
+                    <a href="https://xjqi.github.io/">Xiaojuan Qi</a><sup>#</sup>
+                    <br>
+                    <em>ACM SIGGRAPH 2024 Conference Proceedings (SIGGRAPH)</em>, 2024 &nbsp
+                    <br>
+                    <a href="https://arxiv.org/abs/2404.00409">paper</a>
+                    <br>
+                    We introduce a differentiable SDF-to-opacity transformation function that converts SDF values into corresponding Gaussians' opacities. This function connects the SDF and 3D Gaussians, allowing for unified optimization and enforcing surface constraints on the 3D Gaussians.
+                </td>
+              </tr>
+              
+              <tr>
+                <td style="background-color:#fff9db;padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
+                  <div style="display:flex;align-items:flex-start;">
+                    <img src="./assets/NeRF-Texture-TPAMI.gif" alt="Deformable Radial Kernel Splatting GIF" style="width:240px;max-width:80%;margin-right:16px;border-radius:8px;">
+                    <div>
+                      [6]&nbsp&nbsp<papertitle>NeRF-Texture: Synthesizing Neural Radiance Field Textures</papertitle>
+                      <br>
+                      <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong></a>,
+                      <a href="https://yanpei.me/">Yan-Pei Cao</a>,
+                      <a href="https://users.cs.cf.ac.uk/Yukun.Lai/">Yu-Kun Lai</a>,
+                      <a>Ying Shan</a>,
+                      <a href="http://geometrylearning.com/">Lin Gao</a>
+                      <br>
+                      <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI), 2024</em> &nbsp
+                      <br>
+                      <a href="https://ieeexplore.ieee.org/abstract/document/10489854">paper</a> /
+                      <a href="https://yihua7.github.io/NeRF-Texture-web/">project page</a> /
+                      <a href="https://github.com/yihua7/NeRF-Texture">code</a> 
+                      <iframe src="https://ghbtns.com/github-btn.html?user=yihua7&repo=NeRF-Texture&type=star&count=true&size=small" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+                      <br>
+                      We propose an algorithm to synthesize NeRF textures on arbitrary manifolds. By using a patch-matching method on curved surfaces, we can smoothly quilt texture patches on mesh surfaces. We create a multi-resolution pyramid for a fast patch-matching process. By incorporating a reflection network, we preserve high-frequency view-dependent features such as highlights and mirror reflections in the final synthesized results.
+                    </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td style="background-color:#fff9db;padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
+                  <div style="display:flex;align-items:flex-start;">
+                    <img src="./assets/NeRF-Texture-Sig.gif" alt="Deformable Radial Kernel Splatting GIF" style="width:240px;max-width:80%;margin-right:16px;border-radius:8px;">
+                    <div>
+                      [5]&nbsp&nbsp<papertitle>NeRF-Texture: Texture Synthesis with Neural Radiance Fields</papertitle>
+                      <br>
+                      <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong></a>,
+                      <a href="https://yanpei.me/">Yan-Pei Cao</a>,
+                      <a href="https://users.cs.cf.ac.uk/Yukun.Lai/">Yu-Kun Lai</a>,
+                      <a>Ying Shan</a>,
+                      <a href="http://geometrylearning.com/">Lin Gao</a>
+                      <br>
+                      <em>ACM SIGGRAPH 2023 Conference Proceedings (SIGGRAPH), 2023</em> &nbsp
+                      <br>
+                      <a href="https://dl.acm.org/doi/pdf/10.1145/3588432.3591484">paper</a> /
+                      <a href="https://yihua7.github.io/NeRF-Texture-web/">project page</a> /
+                      <a href="https://github.com/yihua7/NeRF-Texture">code</a> 
+                      <iframe src="https://ghbtns.com/github-btn.html?user=yihua7&repo=NeRF-Texture&type=star&count=true&size=small" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+                      <br>
+                      We introduce a NeRF-based system to acquire, synthesize, map, and relight textures from real-world textures. A novel coarse-fine disentangling representation is proposed to model meso-structures of textures. Acquired textures are synthesized by an implicit patch-matching algorithm.
+                    </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td style="background-color:#fff9db;padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
+                  <div style="display:flex;align-items:flex-start;">
+                    <img src="./assets/StylizedNeRF.gif" alt="Deformable Radial Kernel Splatting GIF" style="width:240px;max-width:80%;margin-right:16px;border-radius:8px;">
+                    <div>
+                      [4]&nbsp&nbsp<papertitle>StylizedNeRF: Consistent 3D Scene Stylization as Stylized NeRF via 2D-3D Mutual Learning</papertitle>
+                      <br>
+                      <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong></a>,
+                      <a>Yue He</a>,
+                      <a href="http://people.geometrylearning/yyj/">Yu-Jie Yuan</a>,
+                      <a href="https://users.cs.cf.ac.uk/Yukun.Lai/">Yu-Kun Lai</a>,
+                      <a href="http://geometrylearning.com/">Lin Gao</a>
+                      <br>
+                      <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022 &nbsp
+                      <br>
+                      <a href="https://arxiv.org/abs/2205.12183">arxiv</a> /
+                      <a href="http://geometrylearning.com/StylizedNeRF/">project page</a> /
+                      <a href="https://github.com/IGLICT/StylizedNeRF">code</a> 
+                      <iframe src="https://ghbtns.com/github-btn.html?user=IGLICT&repo=StylizedNeRF&type=star&count=true&size=small" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+                      <br>
+                      We propose a novel mutual learning framework for 3D scene stylization that combines a 2D image stylization network and NeRF to fuse the stylization ability of 2D stylization network with the 3D consistency of NeRF.
+                    </div>
+                </td>
+              </tr>
             
-            <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-              <td style="padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
-                  [9]&nbsp&nbsp<papertitle>Splatter a Video: Video Gaussian Representation for Versatile Processing</papertitle>
+              <tr>
+                <td style="padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
+                  [3]&nbsp&nbsp<papertitle>Learning Critically: Selective Self Distillation in Federated Learning on Non-IID Data</papertitle>
                   <br>
-                  <a href="https://sunyangtian.github.io/">Yang-Tian Sun</a><sup>*</sup>,
-                  <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong> </a><sup>*</sup>,
-                  <a>Lin Ma</a><sup></sup>,
-                  <a href="https://github.com/shawLyu">Xiaoyang Lyu</a><sup></sup>,
-                  <a href="https://yanpei.me/">Yan-Pei Cao</a>,
-                  <a href="https://xjqi.github.io/">Xiaojuan Qi</a><sup>#</sup>
+                  <a href="https://yutinghe20.github.io/YutingHe/">Yuting He</a>,
+                  <a href="https://people.ucas.ac.cn/~yqchen">Yiqiang Chen</a>,
+                  <a>XiaoDong Yang</a>,
+                  <a>Hanchao Yu</a>,
+                  <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong></a>,
+                  <a>Yang Gu</a>
                   <br>
-                  <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024 &nbsp
+                  <em>IEEE Transactions on Big Data (TBD)</em>, 2022 &nbsp
                   <br>
-                  <a href="https://arxiv.org/abs/2406.13870">paper</a> /
-                  <a href="https://sunyangtian.github.io/spatter_a_video_web/">project page</a> /
-                  <a href="https://github.com/SunYangtian/Splatter_A_Video">code</a> 
+                  <a href="https://www.computer.org/csdl/journal/bd/5555/01/09826416/1EVdvuSiENO">paper</a>
                   <br>
-                  We introduce a novel explicit 3D representation—video Gaussian representation—that embeds a video into 3D Gaussians, enabling tracking, consistent video depth and feature refinement, motion and appearance editing, and stereoscopic video generation.
-              </td>
-            </tr>
-            
-            <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-              <td style="padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
-                  [8]&nbsp&nbsp<papertitle>Spec-gaussian: Anisotropic view-dependent appearance for 3d gaussian splatting</papertitle>
-                  <br>
-                  <a href="https://github.com/ingra14m">Ziyi Yang</a>,
-                  <a>Xinyu Gao</a>,
-                  <a href="https://sunyangtian.github.io/">Yang-Tian Sun</a>,
-                  <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong> </a>,
-                  <a href="https://github.com/shawLyu">Xiaoyang Lyu</a><sup></sup>,
-                  <a>Wen Zhou</a>,
-                  <a>Shaohui Jiao</a>,
-                  <a href="https://xjqi.github.io/">Xiaojuan Qi</a><sup>#</sup>
-                  <a>Xiaogang Jin</a><sup>#</sup>
-                  <br>
-                  <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024 &nbsp
-                  <br>
-                  <a href="https://ingra14m.github.io/Spec-Gaussian-website/file/Spec-Gaussian-nips24.pdf">paper</a> /
-                  <a href="https://ingra14m.github.io/Spec-Gaussian-website/">project page</a> /
-                  <a href="https://github.com/ingra14m/Spec-Gaussian">code</a> 
-                  <br>
-                  We introduce Spec-Gaussian, an approach that utilizes an anisotropic spherical Gaussian (ASG) appearance field instead of SH for modeling the view-dependent appearance of each 3D Gaussian.
-              </td>
-            </tr>
-            
-            <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-              <td style="padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
-                  [7]&nbsp&nbsp<papertitle>3DGSR: Implicit Surface Reconstruction with 3D Gaussian Splatting</papertitle>
-                  <br>
-                  <a href="https://github.com/shawLyu">Xiaoyang Lyu</a><sup></sup>,
-                  <a href="https://sunyangtian.github.io/">Yang-Tian Sun</a>,
-                  <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong> </a>,
-                  <a>Xiuzhe Wu</a>,
-                  <a href="https://github.com/ingra14m">Ziyi Yang</a>,
-                  <a>Yilun Chen</a>,
-                  <a>Jiangmiao Pang</a>,
-                  <a href="https://xjqi.github.io/">Xiaojuan Qi</a><sup>#</sup>
-                  <br>
-                  <em>ACM SIGGRAPH 2024 Conference Proceedings (SIGGRAPH)</em>, 2024 &nbsp
-                  <br>
-                  <a href="https://arxiv.org/abs/2404.00409">paper</a>
-                  <br>
-                  We introduce a differentiable SDF-to-opacity transformation function that converts SDF values into corresponding Gaussians' opacities. This function connects the SDF and 3D Gaussians, allowing for unified optimization and enforcing surface constraints on the 3D Gaussians.
-              </td>
-            </tr>
-            
-            <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-              <td style="background-color:#fff9db;padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
-                <div style="display:flex;align-items:flex-start;">
-                  <img src="./assets/NeRF-Texture-TPAMI.gif" alt="Deformable Radial Kernel Splatting GIF" style="width:240px;max-width:80%;margin-right:16px;border-radius:8px;">
-                  <div>
-                    [6]&nbsp&nbsp<papertitle>NeRF-Texture: Synthesizing Neural Radiance Field Textures</papertitle>
+                  We propose a Selective Self-Distillation method for Federated learning (FedSSD), which imposes adaptive constraints on the local updates by self-distilling the global model's knowledge and selectively weighting it by evaluating the credibility at both the class and sample level.
+                </td>
+              </tr>
+              
+              <tr>
+                <td style="padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
+                    [2]&nbsp&nbsp<papertitle>Neural Radiance Fields from Sparse RGB-D Images for High-Quality View Synthesis</papertitle>
                     <br>
-                    <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong></a>,
-                    <a href="https://yanpei.me/">Yan-Pei Cao</a>,
-                    <a href="https://users.cs.cf.ac.uk/Yukun.Lai/">Yu-Kun Lai</a>,
-                    <a>Ying Shan</a>,
-                    <a href="http://geometrylearning.com/">Lin Gao</a>
-                    <br>
-                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI), 2024</em> &nbsp
-                    <br>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/10489854">paper</a> /
-                    <a href="https://yihua7.github.io/NeRF-Texture-web/">project page</a> /
-                    <a href="https://github.com/yihua7/NeRF-Texture">code</a> 
-                    <br>
-                    We propose an algorithm to synthesize NeRF textures on arbitrary manifolds. By using a patch-matching method on curved surfaces, we can smoothly quilt texture patches on mesh surfaces. We create a multi-resolution pyramid for a fast patch-matching process. By incorporating a reflection network, we preserve high-frequency view-dependent features such as highlights and mirror reflections in the final synthesized results.
-                  </div>
-              </td>
-            </tr>
-            
-            <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-              <td style="background-color:#fff9db;padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
-                <div style="display:flex;align-items:flex-start;">
-                  <img src="./assets/NeRF-Texture-Sig.gif" alt="Deformable Radial Kernel Splatting GIF" style="width:240px;max-width:80%;margin-right:16px;border-radius:8px;">
-                  <div>
-                    [5]&nbsp&nbsp<papertitle>NeRF-Texture: Texture Synthesis with Neural Radiance Fields</papertitle>
-                    <br>
-                    <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong></a>,
-                    <a href="https://yanpei.me/">Yan-Pei Cao</a>,
-                    <a href="https://users.cs.cf.ac.uk/Yukun.Lai/">Yu-Kun Lai</a>,
-                    <a>Ying Shan</a>,
-                    <a href="http://geometrylearning.com/">Lin Gao</a>
-                    <br>
-                    <em>ACM SIGGRAPH 2023 Conference Proceedings (SIGGRAPH), 2023</em> &nbsp
-                    <br>
-                    <a href="https://dl.acm.org/doi/pdf/10.1145/3588432.3591484">paper</a> /
-                    <a href="https://yihua7.github.io/NeRF-Texture-web/">project page</a> /
-                    <a href="https://github.com/yihua7/NeRF-Texture">code</a> 
-                    <br>
-                    We introduce a NeRF-based system to acquire, synthesize, map, and relight textures from real-world textures. A novel coarse-fine disentangling representation is proposed to model meso-structures of textures. Acquired textures are synthesized by an implicit patch-matching algorithm.
-                  </div>
-              </td>
-            </tr>
-            
-            <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-              <td style="background-color:#fff9db;padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
-                <div style="display:flex;align-items:flex-start;">
-                  <img src="./assets/StylizedNeRF.gif" alt="Deformable Radial Kernel Splatting GIF" style="width:240px;max-width:80%;margin-right:16px;border-radius:8px;">
-                  <div>
-                    [4]&nbsp&nbsp<papertitle>StylizedNeRF: Consistent 3D Scene Stylization as Stylized NeRF via 2D-3D Mutual Learning</papertitle>
-                    <br>
-                    <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong></a>,
-                    <a>Yue He</a>,
                     <a href="http://people.geometrylearning/yyj/">Yu-Jie Yuan</a>,
                     <a href="https://users.cs.cf.ac.uk/Yukun.Lai/">Yu-Kun Lai</a>,
-                    <a href="http://geometrylearning.com/">Lin Gao</a>
+                    <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong></a>,
+                    <a href="https://www.graphics.rwth-aachen.de/person/3/">Leif Kobbelt</a>,
+                    <a href="http://geometrylearning.com/">Lin Gao</a>,
                     <br>
-                    <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022 &nbsp
+                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI)</em>, 2022 &nbsp
                     <br>
-                    <a href="https://arxiv.org/abs/2205.12183">arxiv</a> /
-                    <a href="http://geometrylearning.com/StylizedNeRF/">project page</a> /
-                    <a href="https://github.com/IGLICT/StylizedNeRF">code</a> 
+                    <a href="https://ieeexplore.ieee.org/document/9999509">paper</a> /
+                    <a href="http://geometrylearning.com/rgbdnerf/">project page</a>
+                    <!-- <a href="https://github.com/IGLICT/StylizedNeRF">code</a>  -->
                     <br>
-                    We propose a novel mutual learning framework for 3D scene stylization that combines a 2D image stylization network and NeRF to fuse the stylization ability of 2D stylization network with the 3D consistency of NeRF.
-                  </div>
-              </td>
-            </tr>
-          
-            <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-              <td style="padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
-                [3]&nbsp&nbsp<papertitle>Learning Critically: Selective Self Distillation in Federated Learning on Non-IID Data</papertitle>
-                <br>
-                <a href="https://yutinghe20.github.io/YutingHe/">Yuting He</a>,
-                <a href="https://people.ucas.ac.cn/~yqchen">Yiqiang Chen</a>,
-                <a>XiaoDong Yang</a>,
-                <a>Hanchao Yu</a>,
-                <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong></a>,
-                <a>Yang Gu</a>
-                <br>
-                <em>IEEE Transactions on Big Data (TBD)</em>, 2022 &nbsp
-                <br>
-                <a href="https://www.computer.org/csdl/journal/bd/5555/01/09826416/1EVdvuSiENO">paper</a>
-                <br>
-                We propose a Selective Self-Distillation method for Federated learning (FedSSD), which imposes adaptive constraints on the local updates by self-distilling the global model's knowledge and selectively weighting it by evaluating the credibility at both the class and sample level.
-              </td>
-            </tr>
+                    We introduce a novel NeRF reconstruction method using RGB-D inputs from a consumer-level device (iPad), which enables high-quality reconstruction from sparse inputs. Experiments show that the proposed method achieves state-of-the-art novel view synthesis quality in this case of sparse RGB-D inputs.
+                </td>
+              </tr>
             
-            <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-              <td style="padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
-                  [2]&nbsp&nbsp<papertitle>Neural Radiance Fields from Sparse RGB-D Images for High-Quality View Synthesis</papertitle>
-                  <br>
-                  <a href="http://people.geometrylearning/yyj/">Yu-Jie Yuan</a>,
-                  <a href="https://users.cs.cf.ac.uk/Yukun.Lai/">Yu-Kun Lai</a>,
-                  <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong></a>,
-                  <a href="https://www.graphics.rwth-aachen.de/person/3/">Leif Kobbelt</a>,
-                  <a href="http://geometrylearning.com/">Lin Gao</a>,
-                  <br>
-                  <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI)</em>, 2022 &nbsp
-                  <br>
-                  <a href="https://ieeexplore.ieee.org/document/9999509">paper</a> /
-                  <a href="http://geometrylearning.com/rgbdnerf/">project page</a>
-                  <!-- <a href="https://github.com/IGLICT/StylizedNeRF">code</a>  -->
-                  <br>
-                  We introduce a novel NeRF reconstruction method using RGB-D inputs from a consumer-level device (iPad), which enables high-quality reconstruction from sparse inputs. Experiments show that the proposed method achieves state-of-the-art novel view synthesis quality in this case of sparse RGB-D inputs.
-              </td>
-            </tr>
-          
-            <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-              <td style="padding-top:0px;padding-bottom:10px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
-                  [1]&nbsp&nbsp<papertitle>Multiscale Mesh Deformation Component Analysis with Attention-based Autoencoders</papertitle>
-                  <br>
-                  <a href="http://people.geometrylearning.com/~jieyang/">Jie Yang</a>,
-                  <a href="http://geometrylearning.com/">Lin Gao</a>,
-                  <a href="https://qytan.com/">Qingyang Tan</a>,
-                  <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong></a>,
-                  <a>Shihong Xia</a>
-                  <a href="https://users.cs.cf.ac.uk/Yukun.Lai/">Yu-Kun Lai</a>
-                  <br>
-                  <em>IEEE Transactions on Visualization and Computer Graphics (TVCG)</em>, 2021 &nbsp
-                  <br>
-                  <a href="https://arxiv.org/abs/2012.02459">arxiv</a>
-                  <br>
-                  We propose a novel method to exact multiscale deformation components automatically with a stacked attention-based autoencoder.
-              </td>
-            </tr>
-
-            <!-- <tr>
-              <td style="padding-top:0px;padding-bottom:20px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
-                <heading>Services</heading>
-              </td>
-            </tr>
-            <p>Paper reviewer: CVPR</p> -->
-
+              <tr>
+                <td style="padding-top:0px;padding-bottom:10px;padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
+                    [1]&nbsp&nbsp<papertitle>Multiscale Mesh Deformation Component Analysis with Attention-based Autoencoders</papertitle>
+                    <br>
+                    <a href="http://people.geometrylearning.com/~jieyang/">Jie Yang</a>,
+                    <a href="http://geometrylearning.com/">Lin Gao</a>,
+                    <a href="https://qytan.com/">Qingyang Tan</a>,
+                    <a href="https://yihua7.github.io/website/"><strong>Yihua Huang</strong></a>,
+                    <a>Shihong Xia</a>
+                    <a href="https://users.cs.cf.ac.uk/Yukun.Lai/">Yu-Kun Lai</a>
+                    <br>
+                    <em>IEEE Transactions on Visualization and Computer Graphics (TVCG)</em>, 2021 &nbsp
+                    <br>
+                    <a href="https://arxiv.org/abs/2012.02459">arxiv</a>
+                    <br>
+                    We propose a novel method to exact multiscale deformation components automatically with a stacked attention-based autoencoder.
+                </td>
+              </tr>
           </tbody>
         </table>
+
+        <script>
+          // List of tr indices (0-based, not counting the heading row) for first-authored papers
+          const firstAuthorIndices = [0, 1, 5, 6, 7]; // [11], [10], [6], [5], [4] (adjust if order changes)
+          // Use the id to select the correct table
+          const researchTable = document.getElementById('research-table').getElementsByTagName('tbody')[0];
+          // Exclude the heading row (first tr)
+          const rows = Array.from(researchTable.children).filter(tr => tr.tagName === 'TR' && tr.querySelector('papertitle'));
+
+          function showSelected() {
+            rows.forEach((row, idx) => {
+              row.style.display = firstAuthorIndices.includes(idx) ? '' : 'none';
+            });
+          }
+          function showAll() {
+            rows.forEach(row => { row.style.display = ''; });
+          }
+          document.getElementById('show-selected').onclick = showSelected;
+          document.getElementById('show-all').onclick = showAll;
+        </script>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
